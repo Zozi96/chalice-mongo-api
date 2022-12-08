@@ -1,5 +1,5 @@
 from marshmallow import fields
-from core.schemas import MongoBaseSchema
+from chalicelib.schemas import MongoBaseSchema
 
 
 class UserSchema(MongoBaseSchema):

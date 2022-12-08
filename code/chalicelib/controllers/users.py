@@ -5,10 +5,10 @@ import bcrypt
 from chalice import NotFoundError
 from pymongo.collection import Mapping
 
-from core import HTTPMethod
-from core.controllers import BaseController
-from core.database.collections import User
-from core.utils import get_object_id, StandardResponse
+from chalicelib import HTTPMethod
+from chalicelib.controllers import BaseController
+from chalicelib.database.collections import User
+from chalicelib.utils import get_object_id, StandardResponse
 
 
 class SecurityController:

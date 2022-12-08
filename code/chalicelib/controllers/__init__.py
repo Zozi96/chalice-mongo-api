@@ -4,8 +4,8 @@ from typing import Optional, Dict, Text, Type
 
 from chalice import BadRequestError
 
-from core import HTTPMethod
-from core.schemas import MongoBaseSchema
+from chalicelib import HTTPMethod
+from chalicelib.schemas import MongoBaseSchema
 
 
 @dataclass

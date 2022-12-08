@@ -1,7 +1,7 @@
 from chalice import Blueprint
 
-from core.controllers.users import UserController, RetrieveUserController
-from core.schemas.users import UserSchema
+from chalicelib.controllers.users import UserController, RetrieveUserController
+from chalicelib.schemas.users import UserSchema
 
 blueprint = Blueprint(__name__)
 
