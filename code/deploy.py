@@ -1,6 +1,8 @@
 import json
 import os
 
+import inquirer
+
 from dataclasses import dataclass
 
 environments: dict = {
@@ -41,6 +43,10 @@ class Deploy:
         self.set_config()
 
 
+questions: tuple = (
+    inquirer.List(name='stage', message='What stage you want to deploy?', choices=('dev', 'prod')),
+)
+
 if __name__ == '__main__':
-    stage: str = input('Stage: ')
-    Deploy(stage)()
+    answers: dict = inquirer.prompt(questions)
+    Deploy(stage=answers.get('stage'))()
