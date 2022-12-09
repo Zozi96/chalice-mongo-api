@@ -4,12 +4,7 @@
   "stages": {
     "dev": {
       "api_gateway_stage": "api",
-      "environment_variables": {
-        "MONGO_DBNAME": "test",
-        "MONGO_HOST": "testing.1lksfd2.mongodb.net",
-        "MONGO_PASSWORD": "Zozifer96",
-        "MONGO_USERNAME": "zozi"
-      }
+      "environment_variables": {}
     }
   }
 }
