@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Text, TypedDict, Any
+from typing import Text, Any
 
 from bson import ObjectId
 from chalice import NotFoundError, Response
